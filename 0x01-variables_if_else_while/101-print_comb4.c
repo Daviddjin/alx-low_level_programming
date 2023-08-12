@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Return: always 0 
+ * Return: always 0
  */
 int main(void)
 {
@@ -15,22 +15,22 @@ int main(void)
 		digit2 = 0;
 		while (digit2 <= 9)
 		{
-			digit3 = 0
+			digit3 = 0;
 			while (digit3 <= 9)
 			{
 				if (digit1 != digit2 &&
 				    digit1 < digit2 &&
 				    digit2 != digit3 &&
 				    digit2 < digit3)
-				{	
-					purchar(digit1 + 48);
-					purchar(digit2 + 48);
-					purchar(digit3 + 48);
+				{
+					putchar(digit1 + 48);
+					putchar(digit2 + 48);
+					putchar(digit3 + 48);
 
 					if (digit1 + digit2 + digit3 != 24)
 					{
-						purchar(',');
-						purchar(' ');
+						putchar(',');
+						putchar(' ');
 
 					}
 				}
@@ -40,7 +40,7 @@ int main(void)
 		}
 		digit1++;
 	}
-	purchar('\n');
+	putchar('\n');
 
 	return (0);
 }
