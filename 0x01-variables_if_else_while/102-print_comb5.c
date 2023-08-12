@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int firstDigit = 0, seconDigi;
+	int firstDigit = 0, seconDigit;
 
 	while (firstDigit <= 99)
 	{
@@ -16,23 +16,23 @@ int main(void)
 		{
 			if (seconDigit != firstDigit)
 			{
-				purchar((firstDigit / 10) + 48);
-				purchar((firstDigit % 10) + 48);
-				purchar(' ');
-				purchar((seconDigit / 10) + 48);
-				purchar((seconDigit % 10) + 48);
+				putchar((firstDigit / 10) + 48);
+				putchar((firstDigit % 10) + 48);
+				putchar(' ');
+				putchar((seconDigit / 10) + 48);
+				putchar((seconDigit % 10) + 48);
 
 				if (firstDigit != 98 || seconDigit != 99)
 				{
-					purchar(',')
-					purchar(' ')
+					putchar(',');
+					putchar(' ');
 				}
 			}
 			seconDigit++;
 		}
 		firstDigit++;
 	}
-	purchar('\n')
+	putchar('\n');
 
 	return (0);
 }
