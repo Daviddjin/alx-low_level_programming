@@ -5,13 +5,13 @@
  *
  * Return: last digit
  */
-int print_last_digit(int a);
+void print_alphabet_x10(void)
 {
 	int k;
 
 	k = i % 10;
 	if (i < 0)
 		k = -k;
-	purchar(k + '0');
+	putchar(k + '0');
 	return (k);
 }
