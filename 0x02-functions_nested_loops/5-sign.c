@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _5-sign.c - function thats prints sign of a number
+ * print_sign - function thats prints sign of a number
  * @n: the input number as a integer
- *
  * Return: 1 is greater than sero. 0 is zero
  */
-int print_sign(int n);
+
+int print_sign(int n)
 {
 	if (n > 0)
 	{
@@ -19,8 +19,8 @@ int print_sign(int n);
 	}
 	else
 	{
-		putchar('-');
+		_putchar('-');
 		return (0);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
