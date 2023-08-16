@@ -1,21 +1,28 @@
 #include "main.h"
-#include "stdio.h"
+#include <stdio.h>
 /**
- *times_table - fuction that prints the 9times table
- *
- * Return: always 0
+ *times_table - this function print time table of a number.
+ *return: numbers
  */
-void times_table(void);
+
+void times_table(void)
 {
-	int i, j;
+	int i, j, result;
 
 	for (i = 0 ; i < 10 ; i++)
 	{
-		for (i = 0 ; j < 10 ; j++)
+		for (j = 0 ; j < 10 ; j++)
 		{
 			result = i * j;
-			printf('%d , result');
+			if (j == 0)
+				printf("%d, ", result);
+			else
+			{
+				printf("%2d", result);
+				if (j != 9)
+					printf(", ");
+			}
 		}
 	}
-	printf('\n');
+	printf(" \n");
 }
