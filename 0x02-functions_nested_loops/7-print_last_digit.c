@@ -1,17 +1,17 @@
 #include "main.h"
 /**
  * print_last_digit - function that print the last digit
- * @n: input number as an integer
- *
- * Return: last digit
+ *@i: function parameter
+ * Return: k
  */
-void print_alphabet_x10(void)
+
+int print_last_digit(int i)
 {
 	int k;
 
 	k = i % 10;
 	if (i < 0)
 		k = -k;
-	putchar(k + '0');
+	_putchar(k + '0');
 	return (k);
 }
