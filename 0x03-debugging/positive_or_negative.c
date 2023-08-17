@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
  * positive_or_negative - function to test negative or positive.
  * @i: parameter i
