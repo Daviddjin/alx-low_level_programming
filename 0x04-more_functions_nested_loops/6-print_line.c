@@ -5,6 +5,7 @@
  * @n: number of times the character '_' will be printed
  * Return: void
  */
+
 void print_line(int n)
 {
 	if (n <= 0)
