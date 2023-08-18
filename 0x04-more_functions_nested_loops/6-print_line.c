@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_linr - prints staright line on the terminal
+ * print_line - prints staright line on the terminal
  * @n: number of times the character '_' will be printed
  * Return: void
  */
