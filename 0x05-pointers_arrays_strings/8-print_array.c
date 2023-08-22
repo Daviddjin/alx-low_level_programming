@@ -1,6 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * print_array - n elements of an array of integers
+ * @a: array to be used
+ * @n: number of elements to be printed
+ * Return: void
+ */
 
 void print_array(int *a, int n)
 {
@@ -14,4 +20,3 @@ void print_array(int *a, int n)
 	}
 	printf("\n");
 }
-
