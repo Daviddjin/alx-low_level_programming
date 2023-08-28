@@ -1,13 +1,26 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include "string_operations.h"
+#include <stdlib.h>
 
 /**
  * set_string - sets the value of a pointer to a char
- * @s: pointer to pointer
- * @to: pointer char
+ * @dest: pointer to pointer
+ * @src: pointer char
  */
 
-void set_string(char **s, char *to)
+void set_string(char **dest, const char *src)
 {
-	*s = to;
+	*dest = malloc(strlen(src) + 1);
+
+	if (*dest != NULL)
+	{
+		strcpy(*dest, src);
+	}
+	else
+	{
+		fprintf(stderr, "memory allocation failed\n");
+	}
 }
 
