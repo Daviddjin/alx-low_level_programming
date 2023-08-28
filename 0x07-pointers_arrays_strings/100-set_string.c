@@ -1,5 +1,8 @@
-#include "string_operations.h"
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "string_operations.h"
 
 /**
  * set_string - sets the value of a pointer to a char
@@ -7,9 +10,16 @@
  * @src: pointer char
  */
 
-void set_string(char **dest, char *src)
+void set_string(char **dest, const char *src)
 {
-	*dest = src;
+	*dest = (char *)malloc(strlen(src) + 1);
+
+	if (*dest != NULL)
+	{
+		strcpy(*dest, src);
+	}
+	else
+	{
+		fprintf(stderr, "Memory allocation failed\n");
+	}
 }
-
-
