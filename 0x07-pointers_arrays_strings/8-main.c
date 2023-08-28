@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include "diagonals.h"
 
 /**
  * main - check the code
