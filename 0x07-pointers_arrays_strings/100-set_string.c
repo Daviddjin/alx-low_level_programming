@@ -20,6 +20,6 @@ void set_string(char **dest, const char *src)
 	}
 	else
 	{
-		_putchar(stderr, "Memory allocation failed\n");
+		_printf(stderr, "Memory allocation failed\n");
 	}
 }
