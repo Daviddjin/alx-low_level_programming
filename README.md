@@ -1,1 +1,1 @@
-first project in debugging
+0x09. C - Static libraries
