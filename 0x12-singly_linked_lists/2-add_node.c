@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * add-node - add note to beginning
+ * add_node - add note to beginning
  * @head: head of node
  * @str: string to store
  * Return: address of the new element
